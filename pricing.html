@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags for SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankster - Digital Bank Vault</title>
+    <meta
+      name="description"
+      content="Experience the next generation of technology with NEXT. Discover AI-powered solutions and innovative products."
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="./images/favicon-1.png">
+  </head>
+  <body>
+  <header>
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar__container">
+          <!-- Logo on the Left -->
+          <a href="/" id="navbar-logo">Bankster</a>
+
+          <!-- Menu Items in the Middle -->
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/services.html" class="navbar__links">Services</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/pricing.html" class="navbar__links">Pricing</a>
+            </li>
+            <!-- Sign Up Button for Mobile -->
+            <li class="navbar__btn mobile">
+              <a href="/signup.html" class="button">Sign Up</a>
+            </li>
+          </ul>
+
+          <!-- Sign Up Button on the Right (Desktop) -->
+          <div class="navbar__btn desktop">
+            <a href="/signup.html" class="button">Sign Up</a>
+          </div>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button
+            class="navbar__toggle"
+            id="mobile-menu"
+            aria-label="Toggle Navigation"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+  
+  <section class="services">
+        <h2>Choose the right plan for you.</h2>
+
+        <!-- Pricing Toggle Button -->
+        <div class="pricing-toggle">
+          <span class="toggle-option">Monthly</span>
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="pricing-toggle-checkbox"
+              onclick="switchPricing()"
+            />
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-option">Yearly</span>
+          <div class="save-percentage-container">
+            <span class="save-percentage">Save 20%</span>
+          </div>
+        </div>
+
+        <div class="services__container">
+          <!-- Basic Plan -->
+          <div class="services__card">
+            <div class="card-content">
+              <h3>Basic Plan</h3>
+              <div class="card-price">
+                <p class="price monthly-price">$10/mo</p>
+                <p class="price yearly-price hidden">$8/mo</p>
+                <!-- 20% off -->
+                <button>Get Started</button>
+                  <p id="small-desc">Everything you need to get started.</p>
+              </div>
+
+              <div class="card-features">
+                <p>Features:</p>
+                <ul>
+                  <li>Digital Checking Account</li>
+                  <li>Access to basic features</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+<div class="services__card">
+  <div class="card-content">
+    <h3>Standard Plan</h3>
+    <div class="card-price">
+      <p class="price monthly-price">$30/mo</p>
+      <p class="price yearly-price hidden">$24/mo</p>
+      <!-- 20% off -->
+      <button>Get Started</button>
+        <p id="small-desc">
+          Perfect for individuals looking to take control of their finances. 
+        </p>
+    </div>
+    <div class="card-features">
+      <p>Features:</p>
+      <ul>
+        <li>Automatic Expense Tracking</li>
+        <li>Customizable Budgets</li>
+        <li>Personalized Financial Reports</li>
+        <li>Goal-Based Savings Tracking</li>
+        <li>Email & Chat Support</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Premium Plan -->
+<div class="services__card">
+  <div class="card-content">
+    <h3>Premium Plan</h3>
+    <div class="card-price">
+      <p class="price monthly-price">$50/mo</p>
+      <p class="price yearly-price hidden">$40/mo</p>
+      <!-- 20% off -->
+      <button>Get Started</button>
+        <p id="small-desc">
+          Ideal for investors and advanced users. 
+        </p>
+    </div>
+    <div class="card-features">
+      <p>Features:</p>
+      <ul>
+        <li>Automatic Expense Tracking</li>
+        <li>Customizable Budgets</li>
+        <li>Personalized Reports</li>
+        <li>Investment Management</li>
+        <li>AI-Powered Financial Insights</li>
+        <li>Priority Support</li>
+      </ul>
+    </div>
+  </div>
+</div>
+   <script src="app.js" defer></script>
+</body>
